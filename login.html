@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login to Budget Management System</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login_style.css">
 </head>
 <body>
-    <div class="login-container">
-        <form id="loginForm">
-            <h2>Login to Budget Management System</h2>
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Login</button>
-        </form>
+    <div class="cover">
+        <div id="image-cover">
+            <img src="./images/Aston martin db11.jpg" alt="image cover">
+        </div>
+        <div class="login-container">
+            <form id="loginForm">
+                <h2>Login to Budget Management System</h2>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    
     </div>
-
+    
     <script src="login.js"></script>
 </body>
 </html>

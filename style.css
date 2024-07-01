@@ -32,6 +32,7 @@ body .container header .title {
 
 body .container header .title h1 {
   color: #6b6b6b;
+  -ms-flex-align: center;
 }
 
 body .container header .title .underline {
@@ -69,7 +70,11 @@ body .container .dashboard {
       -ms-user-select: none;
           user-select: none;
 }
-
+#mainTitle {
+  text-align: center;
+  padding-top: 20px;
+  color: #6b6b6b;
+} 
 body .container .dashboard .icon {
   display: -webkit-box;
   display: -ms-flexbox;
