@@ -38,7 +38,7 @@ function createListElement(data) {
   textContent.classList.add("textContent");
   const textContentPara = document.createElement("p");
   textContentPara.innerHTML =
-    data.price > -1 ? `+ $${data.price}` : `- $${Math.abs(data.price)}`;
+    data.price > -1 ? `+ ₹${data.price}` : `- ₹${Math.abs(data.price)}`;
   textContent.appendChild(textContentPara);
   liRight.appendChild(textContent);
   const controlsEl = document.createElement("div");
@@ -100,9 +100,9 @@ function updateIncomeAndExpense() {
     amounts.filter((value) => value < 0).reduce((acc, val) => acc + val, 0) * -1
   ).toFixed(2);
 
-  balanceEl.innerHTML = balance > -1 ? `$${balance}` : `-$${Math.abs(balance)}`;
-  moneyPlusEl.innerHTML = `$${income}`;
-  moneyMinusEl.innerHTML = `$${expense}`;
+  balanceEl.innerHTML = balance > -1 ? `₹${balance}` : `-₹${Math.abs(balance)}`;
+  moneyPlusEl.innerHTML = `₹${income}`;
+  moneyMinusEl.innerHTML = `₹${expense}`;
 }
 
 createDOMList();
